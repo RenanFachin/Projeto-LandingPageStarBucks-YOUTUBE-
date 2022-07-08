@@ -241,3 +241,117 @@ main .imgBox img{
         transform: translateY(0px);
     }
 }
+
+@media (max-width: 991px)
+{
+    header
+    {
+        padding: 20px;
+    }
+
+    header .logo 
+    {
+        max-width: 80px;
+        filter: drop-shadow(1px 3px 3px rgb(84, 84, 84));
+    }
+    header ul
+    {
+        display: none;
+    }
+    .toggle
+    {
+        position: absolute;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(images/menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 11;
+    }
+    .toggle.active
+    {
+        position: fixed;
+        right: 20px;
+        background: url(images/close.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    header nav ul.navigation.active
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #ffffff;
+        z-index: 10;
+        gap: 20px;
+    }
+    header nav ul li a{
+        color: #333;
+        font-size: 1.5em;
+        margin: 5px 0;
+    }
+    .page
+    {
+        padding: 20px 20px 120px;
+    }
+    main
+    {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    main .textBox
+    {
+        max-width: 100%;
+    }
+    main .textBox h2
+    {
+        font-size: 2.3em;
+        margin-bottom: 15px;
+    }
+    main .textBox p
+    {
+        font-size: 0.9em;
+        margin-bottom: 0px;
+    }
+    .circle
+    {
+        clip-path: circle(500px at center bottom);
+    }
+    main .imgBox
+    {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    main .imgBox img
+    {
+        max-width: 200px;
+    }
+    .thumb{
+        bottom: 2%;
+        left: 48%
+    }
+    .thumb li img
+    {
+        max-width: 40px;
+    }
+    .sci
+    {
+        background: #017143;
+        right: 5px;
+        top: 53%;
+        width: 50px;
+    }
+}
